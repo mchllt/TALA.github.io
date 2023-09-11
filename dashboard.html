@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+        href="https://fonts.googleapis.com/css?family=Cookie|Montserrat|Open+Sans+Condensed:300|Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script defer src="js/db.js"></script>
+    <title>TALA</title>
+</head>
+
+<body>
+    <div class="main container">
+        <div class="content">
+            <section>
+                <header>
+                    <div class="header">
+                        <img src="img/logov3.png" alt="My Portfolio" class="logo">
+                        <h3>Hello there, <span style="color: #EAC117">user01</span>. Welcome to TALA!</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#dashboard" title="HOME"><i class="fa fa-home"></i> </a></li>
+                                <div class="toggle">
+                                    <li><a href="#notification" title="NOTIFICATIONS"><i class="fa fa-bell"></i> </a>
+                                    </li>
+                                </div>
+                                <li><a href="index.html" title="LOGOUT"><i class="fa fa-fw fa-user"></i> </a></li>
+                                <li><a href="update.html"><i class="fa fa-upload"></i> Update Data</a></li>
+                                <li><a href="FAQ.html" title="CONTACT US"><i class="fa fa-question-circle"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </section>
+            <section id="dashboard" class="text-center">
+                <div id="content-db">
+                    <div class="body-content">
+                        <div>
+                            <iframe width="1080" height="1520"
+                            src="https://lookerstudio.google.com/embed/reporting/70539125-6eb4-4fae-8567-adc68d0eccab/page/p_zpnbzez78c" 
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Notifications</h2>
+                    <table class="notibox">
+                        <caption style="font-size:14px; color:white"><b>RAW MATERIAL REQUIRED TO MEET JANUARY 2023
+                                DEMAND</b></caption>
+
+                        <tr>
+                            <th>RAW MATERIAL</th>
+                            <th>INVENTORY</th>
+                            <th>RAW MATERIAL REQUIRED</th>
+                            <th>NOTE</th>
+                        </tr>
+                        <tr>
+                            <td>Vegan Leather</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td style="color:green">Raw material inventory enough to meet demand</td>
+                        </tr>
+                        <tr>
+                            <td>Cow Leather 10</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td style="color:green">Raw material inventory enough to meet demand</td>
+                        </tr>
+                        <tr>
+                            <td>Cow Leather 12</td>
+                            <td>6</td>
+                            <td>11</td>
+                            <td style="color:red">Order 5 units of Cow Leather 12
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>4</td>
+                            <td>11</td>
+                            <td style="color:red">Order 7 units of Button</td>
+                        </tr>
+                        <tr>
+                            <td>Zipper</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td style="color:red">Order 3 units of Zipper</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>

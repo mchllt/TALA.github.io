@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+    href="https://fonts.googleapis.com/css?family=Cookie|Montserrat|Open+Sans+Condensed:300|Roboto+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/loginl.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/login.js"></script>
+  <title>TALA</title>
+</head>
+
+<body>
+  <!--Header-->
+  <div class="main-container">
+    <div class="content">
+      <section>
+        <header>
+          <div class="header">
+            <a href="#header-home"><img src="img/logov3.png" alt="TALA" class="logo"></a>
+            <nav>
+              <ul>
+                <li><a href="#header-TALA" class="active">TALA</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+              </ul>
+            </nav>
+            <div class="menu-toggle">
+              <i class="fas fa-bars" aria-hidden="true"></i>
+            </div>
+          </div>
+        </header>
+        <div id="header-home">
+          <div class="header-content">
+            <h2>
+              Craft your future<br>
+              with
+              <span class="txt-type" data-wait=1200 data-words='["TALA"]'> </span>
+            </h2>
+            <h3>
+              Combining the power of machine learning and<br>
+              data visualization to accurately predict customer demand <br>
+              and efficiently manage your sales and inventory real-time.
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!--Section: Login-->
+      <div class="login-page">
+        <div class="form33">
+          <div class="login">
+            <div class="login-header">
+              <h3 style="color: azure">LOGIN</h3>
+              <p>Please enter your credentials to login.</p>
+            </div>
+          </div>
+          <div id="login-error-msg-holder">
+            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+          </div>
+          <span></span>
+          <form id="login-form">
+            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="username">
+            <span></span>
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="password">
+            <input type="submit" value="Login" id="login-form-submit">
+          </form>
+          <button id="myBtn">Forgot your password?</button>
+          <p class="message">Don't have an account? <a href="signup.html">Create an account</a></p>
+          <!-- Trigger/Open The Modal -->
+          <!-- Trigger/Open The Modal -->
+          <!-- Trigger/Open The Modal -->
+          <!-- The Modal for Forget Password -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p class="lock-icon"><i class="fas fa-lock"></i></p>
+              <h2>Forgot Password?</h2>
+              <p>You can reset your password here</p>
+              <input type="text" class="passInput" placeholder="Email address">
+              <button>Send My Password</button>
+            </div>
+            <!-- Trigger/Open The Modal -->
+            <!-- Trigger/Open The Modal -->
+            <!-- Trigger/Open The Modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Section: header-TALA-->
+    <section id="header-TALA" class="text-center">
+      <div class="container">
+        <h3 class="section-title">About <span class="text-color">TALA</span></h3>
+        <div class="bottom-line"></div>
+        <h4>Hi.</h4>
+        <p class="desc">
+          <i>Say goodbye to the frustration of running out of stock or missing out on sales opportunities. With TALA,
+            you'll have the data you need at your fingertips, so you can focus on what you do best - crafting
+            high-quality handmade products.</i>
+        </p>
+        <div class="job">
+          <h5>Time-Series Application for Local Artisans</h5>
+          <h6><br></h6>
+          <p class="desc">TALA helps local artisans who sell handmade products online to meet the demands of business
+            and track their sales and inventory with ease. Through a time-series forecasting model and an easy-to-use
+            dashboard, artisans can predict business demands and monitor their business performance real-time.</p>
+        </div>
+      </div>
+    </section>
+    <!--Section: features-->
+    <section id="features" class="text-center">
+      <div class="container">
+        <h3 class="section-title">Application <span class="text-color">Features</span></h3>
+        <div class="bottom-line"></div>
+        <h4>What I can do.</h4>
+        <div class="features-list">
+          <div>
+            <h3>Demand Forecasts</h3>
+            <i class="fas fa-chart-line fa-3x"></i>
+            <p class="desc">
+              TALA's demand forecasting feature accurately predicts customer demand using an advanced time-series
+              forecasting model. Say goodbye to the guesswork of inventory management and hello to being able to
+              efficiently plan your stocks.
+            </p>
+          </div>
+          <div>
+            <h3>Real-Time Dashboard</h3>
+            <i class="fas fa-chart-pie fa-3x"></i>
+            <p class="desc">
+              TALA's dashboard provides a real-time view of your sales and inventory, so you can stay on top of your
+              business anytime, anywhere. No more manual tracking or spreadsheets to manage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: header-pricing-->
+    <section id="pricing" class="text-center">
+      <div class="container">
+        <h3 class="section-title">Pricing <span class="text-color">TALA</span></h3>
+        <div class="bottom-line"></div>
+        <h4>Find the bundle that best suits your needs.</h4>
+      </div>
+      <div class="pricingdiv">
+        <ul class="theplan">
+          <li class="title" style="font-size: 15px">Basic</li>
+          <li class="grey">Try TALA for 15 days for free</li>
+          <li>FREE</li>
+        </ul>
+        <ul class="theplan">
+          <li class="title" style="font-size: 15px">Startup Subscriptions</li>
+          <li class="grey">Suitable for businesses with no data yet</li>
+          <li>Monthly subscription - get access to TALA's dashboard at PHP 500/month</li>
+          <li>Annual subscription - get access to TALA's demand forecasts and dashboard at PHP 4,999/year
+            - for the first 3yrs; will need to upgrade to enterprise account by the 3rd year</li>
+        </ul>
+        <ul class="theplan">
+          <li class="title" style="font-size: 15px">Enterprise Subscriptions</li>
+          <li class="grey">Suitable for businesses with at least 3yrs of data</li>
+          <li>Monthly subscription - get access to TALA's dashboard at PHP 700/month</li>
+          <li>Annual subscription - get access to TALA's demand forecasts and dashboard at PHP 7,999/year</li>
+        </ul>
+      </div>
+    </section>
+    <!--Section: Contact-->
+    <section id="contact" class="text-center">
+      <div class="container">
+        <h3 class="section-title">Contact <span class="text-color">Us</span></h3>
+        <div class="bottom-line"></div>
+        <h4>Get in touch.</h4>
+        <div class="desc">
+          <div class="mail">
+            Email: <span class="text-color">support@TALA.com</span>
+          </div>
+          <div class="phone">
+            Phone: <span class="text-color">+63 928 572 46599</span>
+          </div>
+          <div class="social-menu">
+            <ul>
+              <li><a href='https://web.facebook.com/' target="_blank">
+                  <i class="fab fa-facebook-square fa-2x"></i></a>
+              </li>
+              <li><a href='https://www.linkedin.com/' target="_blank">
+                  <i class="fab fa-linkedin fa-2x"></i></a>
+              </li>
+              <li><a href='https://github.com/' target="_blank">
+                  <i class="fab fa-github fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer id="main-footer">
+    &#9400 2023 Decision 3's
+  </footer>
+  </div>
+  <script src="js/rset.js"></script>
+</body>
+
+</html>
